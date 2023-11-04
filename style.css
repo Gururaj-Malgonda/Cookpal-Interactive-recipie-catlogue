@@ -1,0 +1,152 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family:poppins;
+    box-sizing: border-box;
+}
+#main{
+    width: 100%;
+    height: 100%;
+}
+#hero{
+    background-image: url("Rectangle 20.svg");
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-size:cover;
+    height: 350px;
+}
+#hero>.hero-text{
+    position: relative;
+    width: fit-content;
+    top:80px;
+    left: 120px;
+}
+.search-bar> div{
+    background-color: #f3f3f3;
+    border: none;
+    height: 40px;
+    border-radius: 10px;
+}
+.form-1 > input{
+    width: 0px;
+    height: 0px;
+}
+.form-1{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.form-1 > .btn{
+    width: 180px;
+    height: 65px;
+    color: white;
+    font-size: 16px;
+}
+#menu{
+    display: grid;
+    grid-template-columns: 20% 80%;
+}
+#menu-items{
+    display: flex;
+    flex-wrap: wrap;
+} 
+.recipe-item{
+    border: 1px solid #ccc;
+    padding: 5px;
+    margin: 5px;
+    width: 310px;
+    gap: 20px;
+    border-radius: 10px;
+    border: 1px solid #a1a1a1;
+    box-shadow: 0px 1px 1px 1px #a1a1a1;
+}
+.recipe-item > p{
+    padding-left: 25px;
+    color: #a1a1a1;
+}
+.recipe-item img {
+    width: 295px;
+    height: 200px;
+    padding: 10px;
+    border-radius: 15px;
+}
+.like-button {
+    cursor: pointer;
+}
+.ratings-card {
+    display: grid;
+    grid-template-columns: 25% 80%;
+}
+.name-rating, .time-like{
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+.foot{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+}
+.foot>div >ul> li{
+    list-style: none;
+}
+
+
+@media screen and (max-width:480px) {
+    *{
+        margin:0px;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+    #main{
+        width: 100%;
+        height: 100%;
+    }
+    #hero{
+        width: 300px;
+        height: 250px ;
+        border-radius: 30px;
+    }
+    #hero>.hero-text{
+        position: relative;
+        width: fit-content;
+        top:100px;
+        left: 50px;
+    }
+    .search-bar{
+        width: max-content;
+    }
+    .form-1{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+    }
+    #menu{
+        display: flex;
+        flex-direction: column;
+    }
+    .media-p{
+        display: none;
+    }
+    .form-2{
+        display: flex;
+        gap: 10px;
+    }
+    #menu-items{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    #menu-items > div{
+        /* width: 150px; */
+    }
+    .table{
+        display: none;
+    }
+    .foot{
+        display: grid;
+        grid-template-columns: 100%;
+    }
+}

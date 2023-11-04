@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+</head>
+<body id="main" class="">
+    <nav class="navbar-expand-lg navbar-light bg-white mx-5 mb-2 mt-2 ">
+        <div class="container-fluid d-flex justify-content-between">
+            <img src="Cookpal 1.svg">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse flex-grow-0" id="navbarNavAltMarkup">
+               <div class="navbar-nav">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    <a class="nav-link" href="#">Explore</a>
+                    <a class="nav-link" href="#">Help</a>
+                    <span class="material-symbols-outlined fs-1 text-success bg-info rounded ">
+                        account_circle
+                    </span>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <section id="hero" class=" mx-5 mt-4">
+        <div class="hero-text">
+            <h3 class="text-danger">Trending Now</h3>
+            <h1 class="text-white fs-1">Mike's famous salad<br>with cheese</h1>
+            <h5 class="text-white">By John Mike</h5>
+        </div>
+    </section>
+    <section class="search-bar mx-5 mt-4">
+        <p class="fs-4 fw-bold">Search For Recipies</p>
+        <div class="d-flex gap-1 px-1">
+            <input id="search" placeholder="Search for recipies..." class="flex-grow-1" style="background: transparent; border: none;">
+            <button class="material-symbols-outlined bg-success text-white rounded px-3" style="border: none;">
+                search
+            </button>
+        </div>
+    </section>
+    <form class="form-1 mx-5 mt-4">
+        <input name="recipies" id="all" type="radio">
+        <label class="btn bg-warning d-flex align-items-center justify-content-between" for="all">
+            <span>All Recipies</span>
+            <span class="material-symbols-outlined">
+                arrow_forward_ios
+            </span>
+        </label>
+        <input name="recipies" id="veg" type="radio">
+        <label class="btn bg-info d-flex align-items-center justify-content-between" for="veg">
+            <span>Veg Recipies Only</span>
+            <span class="material-symbols-outlined">
+                arrow_forward_ios
+            </span>
+        </label>
+        <input name="recipies" id="non-veg" type="radio">
+        <label class="btn bg-danger d-flex align-items-center justify-content-between" for="non-veg">
+            <span>Non Veg Recipies</span>
+            <span class="material-symbols-outlined">
+                arrow_forward_ios
+            </span>
+        </label>
+    </form>
+    <section class="mx-5 mt-4" id="menu">
+        <div class="rating">
+            <p class="fs-4 fw-bold media-p">Filters</p>
+            <p>Rating</p>
+            <form class="form-2">
+                <input type="radio" name="rating" id="4-above">&nbsp;&nbsp;
+                <label for="4-above">4 and Above</label>
+                <br>
+                <input type="radio" name="rating" id="4-below">&nbsp;&nbsp;
+                <label for="4-below">Below 4</label>
+            </form>
+        </div>
+        <div id="menu-items">
+        </div>
+    </section>
+    <footer class=" mt-5 py-5 mx-5">
+        <div class="foot">
+            <div class="">
+                <ul class="d-flex flex-column justify-content-between">
+                    <li>
+                        <img src="Cookpal 1.svg">
+                    </li>
+                    <li>
+                        Cookpal is a recipe website with a<br> wide variety of delicious
+                        recipes,<br> easy-to-use search function. Join<br> our community and let's
+                        cook<br> together!
+                    </li>
+                </ul>
+            </div>
+            <div class="table">
+                <ul class="d-flex flex-column justify-content-between">
+                    <li class="fs-4 fw-bold">Company</li>
+                    <li>Home</li>
+                    <li>Explore</li>
+                    <li>Team</li>
+                    <li>About us</li>
+                    <li>Activity</li>
+                </ul>
+            </div>
+  
+            <div class="table">
+                <ul class="d-flex flex-column justify-content-between">
+                    <li class="fs-4 fw-bold">Resources</li>
+                    <li>Blog</li>
+                    <li>Use cases</li>
+                    <li>Testominials</li>
+                    <li>Insights</li>
+                </ul>
+            </div>
+  
+            <div class="table">
+                <ul class="d-flex flex-column justify-content-between">
+                    <li>
+                        <img src="Cookpal 1.svg">
+                    </li>
+                    <li>
+                        Ut risus mattis interdum faucibus facilisi. Facilisi purus
+                        accumsan aliquam.
+                    </li>
+                    <li>
+                        <input placeholder="Your email @" type="email">
+                        <button class="bg-success text-white rounded px-1">Subscribe</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="d-flex justify-content-center gap-2">
+          <img width="50px" src="Facebook.svg">
+          <img width="50px" src="Instagram.svg">
+          <img width="50px" src="Linkedin.svg">
+          <img width="50px" src="Twitter.svg">
+        </div>
+    </footer>
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+</body>
+</html>
